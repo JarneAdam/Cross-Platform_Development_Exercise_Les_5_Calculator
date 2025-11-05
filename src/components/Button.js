@@ -5,10 +5,10 @@ import theme from '../styles/theme.styles';
 const { width } = Dimensions.get('window');
 const buttonWidth = width / 4;
 
-const Button = () => {
+const Button = ({ value = '0' }) => {
     return (
         <TouchableOpacity style={styles.button}>
-            <Text style={styles.text}>1</Text>
+            <Text style={styles.text}>{value}</Text>
         </TouchableOpacity>
     );
 };

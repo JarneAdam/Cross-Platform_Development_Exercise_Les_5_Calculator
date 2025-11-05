@@ -10,34 +10,34 @@ export default function App() {
       <Display />
       <View style={styles.buttonContainer}>
         <View style={styles.row}>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button value="C" />
+          <Button value="+/-" />
+          <Button value="%" />
+          <Button value="÷" />
         </View>
         <View style={styles.row}>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button value="7" />
+          <Button value="8" />
+          <Button value="9" />
+          <Button value="×" />
         </View>
         <View style={styles.row}>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button value="4" />
+          <Button value="5" />
+          <Button value="6" />
+          <Button value="-" />
         </View>
         <View style={styles.row}>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button value="1" />
+          <Button value="2" />
+          <Button value="3" />
+          <Button value="+" />
         </View>
         <View style={styles.row}>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button value="π" />
+          <Button value="0" />
+          <Button value="." />
+          <Button value="=" />
         </View>
       </View>
     </View>
