@@ -4,4 +4,6 @@ export default {
   BUTTON_ALTERNATIVE: '#a6a6a6',
   BUTTON_ACCENT: '#f09a36',
   BUTTON_SUPER: '#990000',
+  BUTTON_TEXT_COLOR: '#ffffff',
+  BUTTON_FONT_SIZE: 30,
 };

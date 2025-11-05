@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const Display = () => {
     return (
-        <Text style={styles.display}>123456789</Text>
+        <Text style={styles.display}>381.654.729</Text>
     );
 };
 
