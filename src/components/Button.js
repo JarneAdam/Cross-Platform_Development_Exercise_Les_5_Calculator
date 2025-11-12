@@ -5,9 +5,19 @@ import theme from '../styles/theme.styles';
 const { width } = Dimensions.get('window');
 const buttonWidth = width / 4;
 
-const Button = ({ value = '0' }) => {
+const Button = ({ value = '0', thema }) => {
+    // Bepaal de achtergrondkleur op basis van het thema
+    let backgroundColor = {};
+    if (thema === 'accent') {
+        backgroundColor = { backgroundColor: theme.BUTTON_ACCENT };
+    } else if (thema === 'alternative') {
+        backgroundColor = { backgroundColor: theme.BUTTON_ALTERNATIVE };
+    } else if (thema === 'super') {
+        backgroundColor = { backgroundColor: theme.BUTTON_SUPER };
+    }
+
     return (
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={[styles.button, backgroundColor]}>
             <Text style={styles.text}>{value}</Text>
         </TouchableOpacity>
     );
